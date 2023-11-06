@@ -13,12 +13,18 @@ const Navbar: React.FC = () => {
       <div className="text-sm flex-grow flex items-center justify-end">
         <Link
           to="/"
-          className="inline-block flex items-center mr-9 text-sm font-sans font-medium text-black"
+          className="inline-block flex items-center mr-9 text-base font-sans font-semibold text-black hover:text-blue-900"
+        >
+          Home
+        </Link>
+        <Link
+          to="/about"
+          className="inline-block flex items-center mr-9 text-base font-sans font-semibold text-black hover:text-blue-900"
         >
           About
         </Link>
         <Link to="/contact" className="inline-block flex items-center">
-          <button className="px-6 py-2 text-sm font-sans font-medium text-white bg-black rounded-md">
+          <button className="px-6 py-1.5 text-base font-sans font-semibold text-white bg-black hover:bg-blue-900 rounded-md">
             Contact
           </button>
         </Link>
